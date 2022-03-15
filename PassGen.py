@@ -1,8 +1,7 @@
 import random
-
 from colorama import *
-
 import time as t
+
 
 main = 0
 min = 0
@@ -10,7 +9,7 @@ may = 0
 num = 0
 sym = 0
 
-
+t.sleep(1)
 print(Fore.GREEN + """
 ██████████████████████████████████████████████████████████▀███████████████
 █▄─▄▄─██▀▄─██─▄▄▄▄█─▄▄▄▄█▄─█▀▀▀█─▄█─▄▄─█▄─▄▄▀█▄─▄▄▀███─▄▄▄▄█▄─▄▄─█▄─▀█▄─▄█
@@ -18,6 +17,7 @@ print(Fore.GREEN + """
 ▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▄▄▄▀▄▄▄▀▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▀▀▀▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀
 """)
 
+t.sleep(1)
 print(Fore.RED + """
                                                     ░█▀▀█ █──█ 　 ░█─── ▀█▀ ░█─▄▀ 
                                                     ░█▀▀▄ █▄▄█ 　 ░█─── ░█─ ░█▀▄─ 
@@ -26,15 +26,12 @@ print(Fore.RED + """
                                                     
 """)
 
-
-
+t.sleep(1)
 main = input(Fore.YELLOW + """
 [1] Generar Contraseña Dificil
 [2] Generar contraseña ExtraDificil
 [3] Generar contraseña ExtraOrdinaria
     >_ """)
-
-
 
 
 if main == "1":
@@ -58,6 +55,7 @@ if main == "1":
 
 
 elif main == "2":
+
     min = "qwertyuiopasdfghjklzxcvbnm"
     may = "QWERTYUIOPASDFGHJKLZXCVBNM"
     num = "0123456789"
@@ -77,6 +75,7 @@ elif main == "2":
 
 
 elif main == "3":
+
     min = "qwertyuiopasdfghjklñzxcvbnmãÇÈüï"
     may = "QWERTYUIOPASDFGHJKLÑZXCVBNMÃçèÜÏ"
     num = "0123456789ↀↁↈ"
@@ -96,5 +95,6 @@ elif main == "3":
 
 
 else:
+
     print(Fore.RED + "Ha ocurrido un error... Intenta solo con numeros del 1-3 sin espacios ni otras letras!")
     print(Fore.WHITE + "")
